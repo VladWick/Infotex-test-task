@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test task</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/card.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="products-container">
+            <section class="products">
+                <div class="amount_checkbox" id="amount">
+                    <label for="amount_checkbox">How much products: </label>
+                    <select id="amount_checkbox_select" class="autocomplete">
+                      <option value="1">10</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                    </select>
+                </div>
+                <div id="sort_checkbox">
+                    <label for="sort_checkbox">Sort by: </label>
+                    <select id="sort_checkbox_select" class="autocomplete">
+                      <option value="1">no sort</option>
+                      <option value="1">name</option>
+                      <option value="2">price</option>
+                    </select>
+                </div>
+                <h1 class="products_title">Products</h1>
+                <ul class="products_list" id="products_list">
+                </ul>
+            </section>
+        </div>
+        <div class="card-container" id="card-container">
+            <section class="card">
+                <img id="card_image" alt="Logo">
+                <div class="card__details">
+                    <div id="title"></div>
+                    <div id="brand"></div>
+                    <div id="category"></div>
+                    <div id="description"></div>
+                    <div id="price"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script/get-api.js"></script>
+    <script src="script/drag-and-drop.js"></script>
+    <script src="script/info.js"></script>
+
+  </body>
+</html>
